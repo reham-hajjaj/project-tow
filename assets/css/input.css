@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@theme{
+    /*color*/
+    --color-background:#ffffff;
+    --color-background: #0a0a0a;
+    --color-background:#c19b76;
+    --color-foreground:#5C5C5C;
+    --color-primary-text:#0000;
+    --color-muted-foreground: #5C5C5C;
+    --#ffffff:--color-white: #ffffff;
+    /*font*/
+    --font-monerret:"Open Sans", sans-serif;<header class="bg-white">
+   /*screen*/
+   --breakpoint-xs:460px; 
+}
+    @layer base{
+    @utility hover{
+--color-primary-text; #0000;
+}
+}
+@utility test{
+border:1px solid #read;
+}
+@utility row{
+@apply flex flex-row-iteams-center gap2;
+
+}
+@utility stack{
+@apply flex flex-row-iteams-center gap2;
+
+}
+@utility circle{
+@apply rounded-full;
+
+}
+@utility col{
+@apply flex flex-row-iteams-center gap2;
+
+}
+@utility button{
+    background-color: #c19b76;
+}
+
+@utility center{
+   @apply flex flex-row-iteams-center justyfil-between gap2; 
+}
+@utility container {
+     @apply mx-auto;
+     padding-inline:16px;
+
+}
