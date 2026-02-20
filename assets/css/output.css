@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-950: oklch(27.9% 0.077 45.635);
+    --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -204,6 +205,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .table {
     display: table;
   }
@@ -393,6 +397,11 @@
       }
     }
   }
+  .max-\[600px\]\:bg-sky-300 {
+    @media (width < 600px) {
+      background-color: var(--color-sky-300);
+    }
+  }
   .max-sm\:bg-amber-950 {
     @media (width < 40rem) {
       background-color: var(--color-amber-950);
@@ -406,6 +415,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
     }
   }
 }
