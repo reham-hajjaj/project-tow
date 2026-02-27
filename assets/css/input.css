@@ -43,3 +43,6 @@ img{
   @apply mx-auto;
   padding-inline: 16px;
 } 
+button{
+  corsor-pointer ;
+}

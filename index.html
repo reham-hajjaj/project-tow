@@ -15,9 +15,9 @@
 </head>
 <body>
  <!--header-->
-    <header class=" h-[90] bg-white max-{500px}:bg-primary">
+    <header class=" h-[90] bg-white ">
         <div class="  container mx-auto flex items-center justyfil-between">
-        <div class=" max-md:hedden flex iteams-center justyfil-between gap-2">
+        <div class=" flex iteams-center justyfil-between gap-6 max-md:hidden ">
             
             <svg width="20" height="20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@
 <h2>Terms Conditions</h2>
 
                        
-                <ul class="flex items-center justyfil-between gap-6" >
+                <ul class="flex items-center justyfil-between gap-2" >
 
                     <li class="text-sm font- Open Sans cursor-pointer">
                         US
@@ -45,37 +45,30 @@
                         ES
                     </li>
                      
-                     
                 </ul>
             
         </div>
+        <button class=" md:hidden  bg-slate-500 hover:bg-slate-800  rounded-full  border-1 border-slate-600 w-12 h-12">
+<i class="fa-solid fa-bars"></i>
+        </button>
        
-        <div class="flex iteams-center justyfil-between gap-16 max-auto  py-5">
-            <span>My Bookings</span>
+        <div class="flex row iteams-center justyfil-between gap-8 mx-auto ">
+            <span>My Bookings
+           
+            </span>
+            <img src="./assets/img/masseg.svg" class="w-7 h-5">
             
-            <svg width="20"
-                        height="20"="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512">
-                        <path
-                            d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
-                    </svg>
+          
             
             
             <span>Add Your Review</span>
    
-            <button class=" flex  text-lg font-Open Sans bg-[#c19b76] corsor-pointer px-4 py-2 w-40 h-20  rounded-lg hover:text-primary"> My Account LOG IN
-                <svg width="20" height="20"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"> 
-                        <path
-                            d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
-                    </svg>
+            <button class=" flex text-sm font-Open Sans bg-[#c19b76]  px-2 py-1  margin-right-15 rounded-lg hover:text-primary"> My Account LOG IN
+               <img src="./assets/img/man.jpg" class="w-7 h-5">
             </button>
            
         </div>
-          <button class="md:hidden w-12 h-12 ">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+          
            
         </div>
  
@@ -87,14 +80,17 @@
     <!--section2-->
     <section class="h-[90] bg-[#0a0a0a] text-white ">
         <div class="  container max-auto color-text[#ffffff] max-auto  py-5 px-4 flex items-center justyfil-between ">
- <div class="logo">
+ <div class="logo max-md:hidden ">
                 <img width="100" height="50" src="https://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/hotel/wp-content/uploads/sites/2/2022/04/hotel-logo.png" class="attachment-large size-large " alt="" loading="lazy" srcset="https://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/hotel/wp-content/uploads/sites/2/2022/04/hotel-logo.png 383w, https://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/hotel/wp-content/uploads/sites/2/2022/04/hotel-logo-300x45.png 300w" sizes="(max-width: 383px) 100vw, 383px">
 
             </div>
+            <button class="md:hidden w-12 h-12  round-full bg-slate-600 hover:bg-slate-800 border-2">
+            <i class="fa-solid fa-bars"></i>
+            </button>
               
             
          
-            <nav class="flex items-center justyfil-between   max-auto max-md:hedden "  >
+            <nav class="flex items-center justyfil-between   mx-auto max-md:hidden "  >
                 <ul  class="flex items-center justyfil-between gap-20">
                     <li class="text-sm font- Open Sans cursor-pointer">
                         Home
@@ -116,9 +112,12 @@
                     </li>
                 </ul>
             </nav>
+            <button class="md:hidden w-12 h-12  round-full bg-slate-600 hover:bg-slate-800 border-2 ">
+               <i class="fa-solid fa-bars"></i>
+            </button>
 
-             <div class="flex iteams-center justyfil-between gap-16  ">
-                <button class="flex   px-4 py-2 text-sm font-Open Sans bg-white text-black " >Bok NOW
+             <div class="flex iteams-center justyfil-between gap-16  mx-auto ">
+                <button class="flex   px-3 py-1 text-sm font-Open Sans bg-white text-black " >Bok NOW
                 </button>
             </div>
              
@@ -131,7 +130,7 @@
     <!--hero section-->
     <section class="h- [calc(100vh-90px)]max-sm max-xl " >
         
-        <div class="container flex h-full max-auto ">
+        <div class="container flex h-full mx-auto ">
 
 <!--hero contact-->
 <div class="flex flex-col iteams-center justyfil-between  text-center  text-white text -4xl py-70 px-4 gap-2 absolute inset-0  text-2xl ">
@@ -191,7 +190,9 @@
     <div class="container grid grid-cols-3 gap-4 ">
       <div class="h-80 w-full flex items-end justify-center flex-row
 bg-[url('../img/doubl-room.jpeg')] 
+
 bg-center bg-cover rounded-lg">
+
               <div class=" flex flex-col w-full h-full bg-black/70 items-start  justify-end gap-5  ">
                 <div  class="ml-5">
                     <h2 class="text-xl text-white">Double Room</h2>
@@ -201,6 +202,91 @@ bg-center bg-cover rounded-lg">
                     <span class="text-white">2 GUESTS</span>
  <img src="./assets/img/icon-size.png" class="w-7 h-5" >
  <span class=" text-white">50FT</span></div>
+</div>
+
+</div>
+ <div class="h-80 w-full flex items-end justify-center flex-row
+bg-[url('../img/family-room.jpeg')] 
+
+bg-center bg-cover rounded-lg">
+
+
+              <div class=" flex flex-col w-full h-full bg-black/70 items-start  justify-end gap-5  ">
+                <div  class="ml-5">
+                    <h2 class="text-xl text-white">family room</h2>
+                </div>
+           <div class="flex gap-4 mr-5">   
+                  <img src="./assets/img/icon-guests.png " class="w-7 h-5 object-cover">
+                    <span class="text-white">3 GUESTS</span>
+ <img src="./assets/img/icon-size.png" class="w-7 h-5" >
+ <span class=" text-white">30FT</span></div>
+</div>
+
+</div>
+ <div class="h-80 w-full flex items-end justify-center flex-row
+bg-[url('../img/luxury-room.jpeg')] 
+
+bg-center bg-cover rounded-lg">
+
+
+              <div class=" flex flex-col w-full h-full bg-black/70 items-start  justify-end gap-5  ">
+                <div  class="ml-5">
+                    <h2 class="text-xl text-white">luxury room</h2>
+                </div>
+           <div class="flex gap-4 mr-5">   
+                  <img src="./assets/img/icon-guests.png " class="w-7 h-5 object-cover">
+                    <span class="text-white">2 GUESTS</span>
+ <img src="./assets/img/icon-size.png" class="w-7 h-5" >
+ <span class=" text-white">50FT</span></div>
+</div>
+
+</div>
+ <div class="h-80 w-full flex items-end justify-center flex-row
+bg-[url('../img/apartment-room.jpg')] 
+
+bg-center bg-cover rounded-lg">
+
+              <div class=" flex flex-col w-full h-full bg-black/70 items-start  justify-end gap-5  ">
+                <div  class="ml-5">
+                    <h2 class="text-xl text-white">apartment room</h2>
+                </div>
+           <div class="flex gap-4 mr-5">   
+                  <img src="./assets/img/icon-guests.png " class="w-7 h-5 object-cover">
+                    <span class="text-white">5 GUESTS</span>
+ <img src="./assets/img/icon-size.png" class="w-7 h-5" >
+ <span class=" text-white">70FT</span></div>
+</div>
+
+</div>
+ <div class="h-80 w-full flex items-end justify-center flex-row
+bg-[url('../img/room-white.jpeg')] 
+
+bg-center bg-cover rounded-lg">
+              <div class=" flex flex-col w-full h-full bg-black/70 items-start  justify-end gap-5  ">
+                <div  class="ml-5">
+                    <h2 class="text-xl text-white">room with view</h2>
+                </div>
+           <div class="flex gap-4 mr-5">   
+                  <img src="./assets/img/icon-guests.png " class="w-7 h-5 object-cover">
+                    <span class="text-white">4 GUESTS</span>
+ <img src="./assets/img/icon-size.png" class="w-7 h-5" >
+ <span class=" text-white">40FT</span></div>
+</div>
+
+</div>
+ <div class="h-80 w-full flex items-end justify-center flex-row
+bg-[url('../img/small-room.jpeg')] 
+
+bg-center bg-cover rounded-lg">
+              <div class=" flex flex-col w-full h-full bg-black/70 items-start  justify-end gap-5  ">
+                <div  class="ml-5">
+                    <h2 class="text-xl text-white">small Room</h2>
+                </div>
+           <div class="flex gap-4 mr-5">   
+                  <img src="./assets/img/icon-guests.png " class="w-7 h-5 object-cover">
+                    <span class="text-white">1GUESTS</span>
+ <img src="./assets/img/icon-size.png" class="w-7 h-5" >
+ <span class=" text-white">15FT</span></div>
 </div>
 
 </div>
