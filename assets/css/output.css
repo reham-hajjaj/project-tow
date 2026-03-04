@@ -265,24 +265,9 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
-  .size-7 {
-    width: calc(var(--spacing) * 7);
-    height: calc(var(--spacing) * 7);
-  }
-  .size-10 {
-    width: calc(var(--spacing) * 10);
-    height: calc(var(--spacing) * 10);
-  }
   .size-13 {
     width: calc(var(--spacing) * 13);
     height: calc(var(--spacing) * 13);
-  }
-  .size-18 {
-    width: calc(var(--spacing) * 18);
-    height: calc(var(--spacing) * 18);
   }
   .size-full {
     width: 100%;
@@ -290,9 +275,6 @@
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
-  }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -314,6 +296,9 @@
   }
   .h-85 {
     height: calc(var(--spacing) * 85);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
   }
   .h-\[90\] {
     height: 90;
@@ -348,9 +333,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-1 {
-    max-width: calc(var(--spacing) * 1);
-  }
   .max-w-1\/2 {
     max-width: calc(1 / 2 * 100%);
   }
@@ -360,20 +342,11 @@
   .flex-1 {
     flex: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
-  .resize {
-    resize: both;
-  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -383,9 +356,6 @@
   }
   .flex-row {
     flex-direction: row;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -483,9 +453,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .button {
-    background-color: #c19b76;
   }
   .bg-\[url\(\'\.\.\/img\/apartment-room\.jpg\'\)\] {
     background-image: url('../img/apartment-room.jpg');
@@ -608,23 +575,14 @@
   .text-wrap {
     text-wrap: wrap;
   }
-  .text-\[\#5C5C5C\] {
-    color: #5C5C5C;
-  }
   .text-black {
     color: var(--color-black);
-  }
-  .text-muted-foreground {
-    color: var(--color-muted-foreground);
   }
   .text-white {
     color: var(--color-white);
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .outline-hidden {
     --tw-outline-style: none;
@@ -633,10 +591,6 @@
       outline: 2px solid transparent;
       outline-offset: 2px;
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -660,16 +614,6 @@
       display: none;
     }
   }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
-    }
-  }
-  .sm\:grid {
-    @media (width >= 40rem) {
-      display: grid;
-    }
-  }
   .sm\:grid-cols-1 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -678,21 +622,6 @@
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .sm\:flex-row {
-    @media (width >= 40rem) {
-      flex-direction: row;
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
-    }
-  }
-  .md\:grid {
-    @media (width >= 48rem) {
-      display: grid;
     }
   }
   .md\:hidden {
@@ -705,11 +634,6 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-4 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -718,11 +642,6 @@
   .md\:text-\[58px\] {
     @media (width >= 48rem) {
       font-size: 58px;
-    }
-  }
-  .lg\:grid {
-    @media (width >= 64rem) {
-      display: grid;
     }
   }
   .lg\:w-1\/2 {
@@ -740,11 +659,6 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-4 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 img {
@@ -759,17 +673,11 @@ img {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
