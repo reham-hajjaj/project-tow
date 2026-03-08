@@ -18,7 +18,14 @@
     <header class=" h-[90] bg-white ">
         <div class="  container mx-auto flex items-center justyfil-between">
         <div class=" flex iteams-center justyfil-between gap-6 max-md:hidden ">
-            
+            <div class="row md:hidden">
+                 <button class="   bg-slate-300 hover:bg-slate-300 rounded-full  border-1 border-slate-600 w-12 h-12">
+<i class="fa-solid fa-bars"></i>
+        </button>
+         <button class="   bg-slate-300 hover:bg-slate-300  rounded-full  border-1 border-slate-600 w-12 h-12">
+<i class="fa-solid fa-bars"></i>
+        </button>
+            </div>
             <svg width="20" height="20"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512">
@@ -48,9 +55,7 @@
                 </ul>
             
         </div>
-        <button class=" md:hidden  bg-slate-500 hover:bg-slate-800  rounded-full  border-1 border-slate-600 w-12 h-12">
-<i class="fa-solid fa-bars"></i>
-        </button>
+       
        
         <div class="flex row iteams-center justyfil-between gap-8 mx-auto ">
             <span>My Bookings
@@ -80,17 +85,21 @@
     <!--section2-->
     <section class="h-[90] bg-[#0a0a0a] text-white ">
         <div class="  container max-auto color-text[#ffffff] max-auto  py-5 px-4 flex items-center justyfil-between ">
- <div class="logo max-md:hidden ">
+ <div class="logo  max-md:hidden ">
                 <img width="100" height="50" src="https://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/hotel/wp-content/uploads/sites/2/2022/04/hotel-logo.png" class="attachment-large size-large " alt="" loading="lazy" srcset="https://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/hotel/wp-content/uploads/sites/2/2022/04/hotel-logo.png 383w, https://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/hotel/wp-content/uploads/sites/2/2022/04/hotel-logo-300x45.png 300w" sizes="(max-width: 383px) 100vw, 383px">
 
             </div>
-            <button class="md:hidden w-12 h-12  round-full bg-slate-600 hover:bg-slate-800 border-2">
+            <div class="md:hidden row">
+               <button class=" w-12 h-12  round-full bg-slate-600 hover:bg-slate-800 border-2">
             <i class="fa-solid fa-bars"></i>
             </button>
-              
-            
+               <button class=" w-12 h-12  round-full bg-slate-600 hover:bg-slate-800 border-2 ">
+               <i class="fa-solid fa-bars"></i>
+            </button> 
+            </div>
+          
          
-            <nav class="flex items-center justyfil-between   mx-auto max-md:hidden "  >
+            <nav class="flex items-center justyfil-between  mx-auto max-md:hidden"  >
                 <ul  class="flex items-center justyfil-between gap-20">
                     <li class="text-sm font- Open Sans cursor-pointer">
                         Home
@@ -112,13 +121,10 @@
                     </li>
                 </ul>
             </nav>
-            <button class="md:hidden w-12 h-12  round-full bg-slate-600 hover:bg-slate-800 border-2 ">
-               <i class="fa-solid fa-bars"></i>
-            </button>
+           
 
              <div class="flex iteams-center justyfil-between gap-16  mx-auto ">
-                <button class="flex   px-3 py-1 text-sm font-Open Sans bg-white text-black " >Bok NOW
-                </button>
+                <button class="flex   px-3 py-1 text-sm font-Open Sans bg-white text-black " >Bok NOW</button>
             </div>
              
         
@@ -128,7 +134,7 @@
 
       </section>
     <!--hero section-->
-    <section class="h- [calc(100vh-90px)] max-sm max-xl " >
+    <section class="h- [calc(100vh-90px)] " >
         
         <div class="container flex h-full mx-auto  ">
 
@@ -141,7 +147,7 @@
             <span class=" border-1 w-35 h-20 iteams-center  text-center flex  px-3 py-1 mx-auto  transition-color appercas "> ROOM-SUITES</span>
  
         <!--card-->
-        <div class="   flex  iteams-center justyfil-center py-70 mx-auto   text-lg-center lg:grid-cols-2">
+        <div class="   iteams-center justyfil-center py-70 mx-auto   text-lg-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
 
              <div class="h-50 w-40 bg-white text-black px-5 py-1 text-center justyfil-center max-auto ">
                 <h1>CHCK-N</h1>
@@ -186,8 +192,8 @@
     </section>
 <!--section3-->
 <!--imag-->
-<section class=" py-10 h- [calc(100vh-90px)]">
-    <div class="container h-full  flex items-center justify-center mx-auto   flex flex-col  md:flex-row ">
+<section class="  h- [calc(100vh-90px)] py-24 ">
+    <div class="container h-full  flex items-center justify-center mx-auto   flex flex-col  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
         <div class="flex-1 padding-20px 15px 0px 50px">
         <img src="./assets/img/room-room.jpeg">
         <img src="./assets/img/card.jpg" class="w-40 h-40 top-0 left-0 ml-5">
@@ -198,7 +204,7 @@
             <h1 class="text-3xl letter-spacing -1px font-family[Gilda Display] font-size-80px md:text-[58px] ">Relax in our Hotel Resort</h1>
             <p>Quisque eu euismod arcu. Morbi et dapibus diam,<br> sed interdum velit.<br> Proin tempor nunc vel nisl condimentum,<br> nec tempor risus.</p>
             <p>Quisque eu euismod arcu. Morbi et dapibus diam,<br> sed interdum velit. <br>Proin tempor nunc vel nisl condimentum, <br>nec tempor risus.</p>
-            <div class="row">
+            <div class="row grid grid-cols-1  md:grid-cols-2  ">
                 <button>
                 <img src="./assets/img/weman.png">
             </button>
@@ -220,11 +226,8 @@
      <!--section4-->   
 <!--packages-->
 <section class="py-10 main-h-[100vh] " >
-    <div class="container grid grid-cols-3  gap-4  flex flex-col justify-center sm:grid-cols-2 md:grid-cols-3    ">
-      <div class="grid grid-cols-3  gap-4  flex flex-col justify-center sm:grid-cols-2 md:grid-cols-3 
-bg-[url('../img/doubl-room.jpeg')] 
-
-bg-center bg-cover rounded-lg">
+    <div class="container grid grid-cols-1  gap-4  flex flex-col justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-col-4   ">
+      <div class="  gap-4  flex flex-col justify-center  bg-[url('../img/doubl-room.jpeg')] bg-center bg-cover rounded-lg">
 
               <div class=" flex flex-col w-full h-full bg-black/70 items-start  justify-end gap-5  ">
                 <div  class="ml-5">
@@ -334,12 +337,12 @@ bg-center bg-cover rounded-lg">
 <!--section5-->
 <!--contact-->
 <section class="h- [calc(100vh-90px)]">
-    <div class="container  h-full  flex items-center justify-center  flex flex-col  md:flex-row">
+    <div class="container  h-full  flex items-center justify-center  flex flex-col grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
         <div class="flex-1 flex flex-col gap-8">
 <p class=" font-light">BEST SUMMER OFFERS</p>
 <h1 class=" text-2xl md:text-[58px] font-sans">Check the<br> Promotions</h1>
 <p class=" text-wrap">Pellentesque maximus pharetra tristique.<br> Vestibulum eget odio blandit, <br>finibus felis non, efficitur diam. Sed condimentum pellentesque eros.<br> Etiam posuere turpis in ultricies ullamcorper.</p>
-<div class=" row">
+<div class=" row grid grid-cols-1  md:grid-cols-2 ">
     <span>
         <img src="./assets/img/man.png">
     </span>
@@ -366,11 +369,11 @@ bg-center bg-cover rounded-lg">
 <!--secton6-->
 <!--card1-->
 <sectio class="py-24 ">
-    <div class="container mx-auto  flex items-center justify-center py-10 gap-4 text-center w-ful lg:w-1/2 ">
-        <div class="flex-1 row bg-card[#FFFFFF] rounded-md overflow box-sizing: border-box gap-8   max-w-1/2 border-none outline-hidden  transition: background 0.3s,  box-shadow 0.3s margin-top: 0px
+    <div class="container mx-auto items-center justify-center py-10 gap-4 text-center w-ful grid grid-cols-1  md:grid-cols-2  ">
+        <div class="flex-1 row bg-card[#FFFFFF] rounded-md overflow box-sizing: border-box gap-8   border-none outline-hidden  transition: background 0.3s,  box-shadow 0.3s margin-top: 0px
     margin-bottom: 0px;
     padding: 30px 0px 120px 0px  ">
-<img src="./assets/img/chire.png" class="w-25 h-25 nattachment-full size-full    border-none border-radius[0] ">
+<img src="./assets/img/chire.png" class="w-25 h-25 nattachment-full size-full    border-none border-radius[0]  ">
 <div class="text-align: left p-0  margin-bottom: 0px;
     padding: 30px 0px 120px 0px ">
     <h3 class="font-bold">Reception 24h / 7 Days</h3>
@@ -379,7 +382,7 @@ bg-center bg-cover rounded-lg">
 
         </div>
         <!--card2-->
-          <div class="flex-1 row bg-card[#FFFFFF] rounded-md overflow gap-8  border-none outline-hidden max-w-1/2 flex  box-shadow 0.2s margin-top: 0px
+          <div class="flex-1 row bg-card[#FFFFFF] rounded-md overflow gap-8    border-none outline-hidden max-w-1/2 flex  box-shadow 0.2s margin-top: 0px
     margin-bottom: 0px;
     padding: 30px 0px 120px 0px   ">
 <img src="./assets/img/chire.png" class="w-25 h-25 nattachment-full size-full  border-none border-radius[0] ">
@@ -396,15 +399,15 @@ bg-center bg-cover rounded-lg">
 <!--end section6-->
 
      <!--section7-->
-     <section class=" h-[100vh] bg-[url(../img/room-big.jpeg)] bg-no-repeat object-cover flex flex-col md:flex-row">
+     <section class=" h-[100vh] bg-[url(../img/room-big.jpeg)] bg-no-repeat object-cover md:flex-row">
         
-        <div class="container center flex center mx-auto py-40 text-center justify-center ">
-            <div class="flex-1 text-white py-4 text-center justify-center  ">
+        <div class="container  flex  mx-auto py-40 text-center justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
+            <div class="flex flex-col iteams-center justyfil-between  text-center  text-white text -4xl py-70 px-4 gap-2 absolute inset-0  text-2xl">
                 <p class="letter spacing 2px">OUR ROOM PRICES</p>
                 <h2 class="text-4xl uppercase">The Best Prices</h2>
             </div>
             <!--card1-->
-       <div class=" flex flex-col bg-white text-black p-6 w-60 h-80 gap-3 alin items-start d-flex w-bold mt-4 d-block mx-auto py-2 ">
+       <div class=" flex flex-col bg-white text-black p-6 w-60 h-80 gap-2 alin items-start d-flex w-bold mt-4 d-block mx-auto py-2 ">
 <h1 class="font family[Gilda Display]">Single Room</h1>
 <span>$ 45 / night</span>
 <p class="font family[Roboto] text-sm">Proin lacinia vehicula amet<br>
@@ -445,29 +448,29 @@ consectetur adipiscing elit</p>
      </section>
 
      <!--section8>-->
-     <section class="h-full">
-        <div  class="container flex mx-auto gap-2 py-4 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3">
+     <section class=" h-[90] py-24">
+        <div  class="container flex mx-auto gap-2 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             <!--img-->
             <div class="flex flex-col-1  pt-4 p-4 ">
                 
- <img src="./assets/img/مطبخ (2).jpg" class="img-fulid"/>
- <nav >
-    <ul class="max-w-full bg-white transition-shadow rounded-full object  py-4 mt-4 pt-5 gap-4 border-non outline-hidden ">
-        <li class="text-3xl">23</li>
-        <li class="text-sm">rooms</li>
-        <li class="text-3xl" >12</li>
+ <img src="./assets/img/مطبخ (2).jpg" class="w-50 h-100"/>
+ <nav class="hidden md:block">
+    <ul class="max-w-full bg-white transition-shadow rounded-full object flex  py-4 mt-4 pt-5 gap-4 border-non outline-hidden hidden md:block ">
+        <li class="text-3xl" class="hidden md:block">23</li>
+        <li class="text-sm" class="hidden md:block">rooms</li>
+        <li class="text-3xl" class="hidden md:block" >12</li>
         <li>SUITES</li>
-        <li  class="text-3xl">24</li>
-        <li class="text-sm">H/24</li>
-        <li class="text-3xl">16</li>
-        <li class="text-sm" >LOREM</li>
+        <li  class="text-3xl" class="hidden md:block">24</li>
+        <li class="text-sm" class="hidden md:block">H/24</li>
+        <li class="text-3xl" class="hidden md:block">16</li>
+        <li class="text-sm" class="hidden md:block" >LOREM</li>
     </ul>
  </nav>
             </div>
           
             <div class="flex flex-col-1 p-4 pt-4 ">
                
-<img src="./assets/img/مطبخ (1).jpg"class="img-fulid"/>
+<img src="./assets/img/مطبخ (1).jpg"class="w-50 h-100"/>
             </div>
             <div class=" flex-1 flex flex-col gap-4 mr-5 ml-4 items-center justify-center">
             <p class="letter-spacing -4px font-size-12px">HOTEL FACILITIES</p>
@@ -492,26 +495,26 @@ consectetur adipiscing elit</p>
 
      <!--end section8-->
      <!--section9-->
- <section class ="h-80 ">
-        <div class="container mx-auto flex py-10 flex flex-col sm:flex-row iteams-cnter ">
-            <div class=" flex-1 col-md-4 gap-2 size-7 align-center   text-center justify-center  ">
-                <img src="./assets/img/key.png"/>
+ <section class ="h-80 py-24">
+        <div class="container mx-auto py-10 p-6 iteams-center justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 ">
+            <div class=" flex-1 col-md-4 gap-2 size-7    text-center justify-center  ">
+                <img src="./assets/img/key.png"class="w-full">
                 <span class="text-2xl">Smart Key</span>
                 <p class="text-muted-foreground  text-[#5C5C5C]">Lorem ipsum dolor</p>
             </div>
              <div class="flex-1 col-md-4 gap-2 size-7 align-center  text-center justify-center  ">
-                <img src="./assets/img/bag.png"/>
+                <img src="./assets/img/bag.png"class="w-full"/>
                 <span class="text-2xl">Store Luggage</span>
                 <p class="text-sm  text-[#5C5C5C]">Lorem ipsum dolor</p>
             </div>
             <div class="flex-1 col-md-4 gap-2 size-7  align-center  text-center justify-center ">
-                <img src="./assets/img/ban.png"/>
+                <img src="./assets/img/ban.png"class="w-full"/>
                 <span class="text-2xl">Room Service</span>
                 <p class="text-sm  text-[#5C5C5C]">Lorem ipsum dolor</p>
             </div>
 
              <div class=" flex-1 col-md-4 gap-2 size-7  align-center  text-center justify-center ">
-                <img src="./assets/img/king.png"/>
+                <img src="./assets/img/king.png"class="w-full"/>
                 <span class="text-2xl">Disinfection</span>
                 <p class="text-sm  text-[#5C5C5C]">Lorem ipsum dolor</p>
             </div>
@@ -526,7 +529,7 @@ consectetur adipiscing elit</p>
     
      
      <!--section10-->
-     <section class="h-[100vh] py-24 bg-[url(../img/bed-room.jpeg)] bg-no-repeat object-cover  relative">
+     <section class=" py-24 bg-[url(../img/bed-room.jpeg)] bg-no-repeat object-cover  relative">
         <div class ="container flex mx-auto gap-4 flex-col md:flex-row">
             <div class="flex-col   text-white  flex flex-col justify-center text-justify items-center gap-4  leading-8 py-4 text-center md:text-left ">
                 <p class="  letter-spacing-[4px]">BUS STATION NEAR</p>
@@ -573,9 +576,9 @@ consectetur adipiscing elit</p>
             <h2 class="text-lg font-semibold">Stay Tuned</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci nisl, tempus ut sem a,<br> scelerisque sollicitudin arcu.</p>
         </div>
-       <div class=" container grid grid-cols-1  gap-4  flex justify-center  sm:grid-cols-2 md:grid-cols-3">
+       <div class=" container grid grid-cols-1  gap-4  flex justify-center md:grid-cols-2 lg:grid-cols-3">
  <!--card1-->     
-<div class="grid grid-cols-1  gap-4  flex   justify-center sm:grid-cols-2 md:grid-cols-3 ">
+<div class=" gap-4  flex   justify-center ">
     <div class="flex flex-col   w-full h-full items-start  justify-end gap-8 ">
        <img src="./assets/img/blog-1.jpg"class="w-full" />
        <p class="text-sm">March 14, 2022</p>
@@ -636,7 +639,7 @@ consectetur adipiscing elit</p>
      <!--section12-->
      <section class="h-90 bg-black py-40 p-0">
         
-        <div class="container  h-full flex  grid grid-col-1 grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 ">
+        <div class="container  h-full flex  grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 ">
             <div class="flex-1 flex-col bg-[url('../img/map-map.jpg')] object-cover w-100% h-100% bg-no-repeat left-0 p-0 relative">
 
             </div>
@@ -676,7 +679,7 @@ consectetur adipiscing elit</p>
      <!--end section12-->
      <!--section13-->
      <section class="h-80 bg-black py-40">
-        <div class="container  h-full flex  grid grid-col-1 grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 ">
+        <div class="container  h-full flex  grid grid-col-1 gap-16  md:grid-cols-2 lg:grid-cols-3 ">
             <div class=" flex-1 flex-col shadow-hidden">
             <h1 class=" text-white mb-3 text-3xl font-sans ">Phone Support</h1>
             <span class=" text-white mb-3 text-sm font-light letter-spacing :1px " >24 HOURS A DAY <br>+ 01 345 647 745</span>
@@ -719,25 +722,25 @@ consectetur adipiscing elit</p>
      <!--end section13-->
 
      <!--section14-->
-     <section class="h-80 bg-black py-24">
+     <section class="h-80 bg-black  gap-16 py-24 px-6 md:px-0">
        <div class="  container mx-auto flex items-center justyfil-between">
-        <div class=" flex iteams-center justyfil-between gap-6 text-white max-md:hidden ">
-         
-                <ul class="flex items-center justyfil-between gap-20" >
+        <div class=" flex iteams-center justyfil-between gap-6 text-white  ">
+        
+                <ul class="flex items-center justyfil-between gap-20"class="hidden md:block">
 
-                    <li class="text-sm font- Open Sans cursor-pointer">
+                    <li class="text-sm font- Open Sans cursor-pointer"class="hidden md:block">
                     Home
                     </li>
-                    <li class="text-sm font-Open Sans cursor-pointer">
+                    <li class="text-sm font-Open Sans cursor-pointer"class="hidden md:block">
                     Services
                     </li>
-                    <li class="text-sm font-Open Sans cursor-pointer">
+                    <li class="text-sm font-Open Sans cursor-pointer"class="hidden md:block">
                     About
                     </li>
-                      <li class="text-sm font-Open Sans cursor-pointer">
+                      <li class="text-sm font-Open Sans cursor-pointer"class="hidden md:block">
                         Booking
                     </li>
-                     <li class="text-sm font-Open Sans cursor-pointer">
+                     <li class="text-sm font-Open Sans cursor-pointer"class="hidden md:block">
                       Contact
                     </li>
                 </ul>
